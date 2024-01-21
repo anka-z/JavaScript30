@@ -103,8 +103,20 @@
             target="_blank">Link 3</a>
     </footer>
 
-    <!-- If you don't want an alternate theme, remove this script and delete the index.js file in the src folder. -->
-    <script type="module" src="src/index.js"></script>
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body");
+
+            if (body.classList.contains("alternate")) {
+                body.classList.remove("alternate");
+            } else {
+                body.classList.add("alternate");
+            }
+        }
+
+        let themeButton = document.querySelector(".themeButton");
+        themeButton.addEventListener("click", changeTheme);
+    </script>
 
 </body>
 
