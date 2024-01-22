@@ -17,6 +17,7 @@
   <div class="wrapper">
     <h2>LOCAL TAPAS</h2>
     <button class="check-uncheck">Check/Uncheck All</button>
+    <button class="clear-list">Clear List</button>
     <p></p>
     <ul class="plates">
       <li>Loading Tapas...</li>
@@ -31,6 +32,7 @@
   const addItems = document.querySelector('.add-items');
   const itemsList = document.querySelector('.plates');
   const checkUncheckButton = document.querySelector('.check-uncheck');
+  const clearListButton = document.querySelector('.clear-list');
   const items = JSON.parse(localStorage.getItem('items')) || []; 
 
   let allChecked = false;
@@ -91,9 +93,16 @@
     populateList(items, itemsList);  
   }
 
+  function clearList() {
+    items.length = 0;
+    localStorage.removeItem('items');
+    populateList(items, itemsList);
+  }
+
   addItems.addEventListener('submit', addItem);
   itemsList.addEventListener('click', toggleDone);
   checkUncheckButton.addEventListener('click', toggleCheckUncheck);
+  clearListButton.addEventListener('click', clearList);
 
   populateList(items, itemsList);
 
