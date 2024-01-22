@@ -7,7 +7,6 @@
   <link rel="icon" href="https://fav.farm/🔥" />
 </head>
 <body>
-  
   <!--
       Fish SVG Cred:
       https://thenounproject.com/search/?q=fish&i=589236
@@ -17,6 +16,7 @@
 
   <div class="wrapper">
     <h2>LOCAL TAPAS</h2>
+    <button class="check-uncheck">Check/Uncheck All</button>
     <p></p>
     <ul class="plates">
       <li>Loading Tapas...</li>
@@ -30,10 +30,74 @@
 <script>
   const addItems = document.querySelector('.add-items');
   const itemsList = document.querySelector('.plates');
-  const items = [];
+  const checkUncheckButton = document.querySelector('.check-uncheck');
+  const items = JSON.parse(localStorage.getItem('items')) || []; 
+
+  let allChecked = false;
+
+  function addItem(e) {
+    e.preventDefault(); // stop the page from reloading
+    const text = (this.querySelector('[name=item]')).value;
+    const item = {
+      //text: text,
+      text, // or just a shorthand
+      done: false
+    };
+    
+    items.push(item);
+    populateList(items, itemsList);
+    localStorage.setItem('items', JSON.stringify(items)); 
+    this.reset();
+  }
+
+  function populateList(plates = [], platesList) {
+    platesList.innerHTML = plates.map((plate, i) => {
+      return `
+        <li>
+          <input type="checkbox" data-index=${i} id="item${i}" ${plate.done ? 'checked' : '' } />
+          <label for="item${i}">${plate.text}</label>
+        </li>
+      `;
+    }).join(''); // takes array and turn it into a big string
+  }
+
+  function toggleDone(e) {
+    if (!e.target.matches('input')) return; // skip this unless it's an input
+    const el = e.target;
+    const index = el.dataset.index;
+    items[index].done = !items[index].done; // change the property from false to true or vice versa
+    localStorage.setItem('items', JSON.stringify(items)); // store in local storage
+    populateList(items, itemsList); // update the page visibility
+  }
+
+  function toggleCheckUncheck() {
+    allChecked = !allChecked;
+    if (allChecked) {
+      checkAll();
+    } else {
+      uncheckAll();
+    }
+  }
+
+  function checkAll() {
+    items.forEach(item => (item.done = true));
+    localStorage.setItem('items', JSON.stringify(items));
+    populateList(items, itemsList);  
+  }
+
+  function uncheckAll() {
+    items.forEach(item => (item.done = false));
+    localStorage.setItem('items', JSON.stringify(items));
+    populateList(items, itemsList);  
+  }
+
+  addItems.addEventListener('submit', addItem);
+  itemsList.addEventListener('click', toggleDone);
+  checkUncheckButton.addEventListener('click', toggleCheckUncheck);
+
+  populateList(items, itemsList);
 
 </script>
-
 
 </body>
 </html>
