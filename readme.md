@@ -21,6 +21,7 @@ Day 12: [Key Sequence Detection](https://anka-z.github.io/JavaScript30/12%20-%20
 Day 13: [Slide in on Scroll](https://anka-z.github.io/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/index.html)<br>
 Day 14: [JS Refrences VS Copying](https://anka-z.github.io/JavaScript30/14%20-%20JavaScript%20References%20VS%20Copying/index.html)<br>
 Day 15: [LocalStorage](https://anka-z.github.io/JavaScript30/15%20-%20LocalStorage/index.html)<br>
+Day 16: [Mouse Move Shadow](https://anka-z.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index.html)<br>
 
 #### Portfoloio Template From 
 
