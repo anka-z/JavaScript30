@@ -7,7 +7,6 @@
 </head>
 <body>
 
-  
   <div class="hero">
     <h1 contenteditable>🔥WOAH!</h1>
   </div>
@@ -20,6 +19,7 @@
 
   body {
     margin: 0;
+    background-color:azure;
   }
 
   .hero {
@@ -37,6 +37,39 @@
   </style>
 
 <script>
+  const hero = document.querySelector('.hero');
+  const text = hero.querySelector('h1');
+  const walk = 250; // 250px
+
+  function shadow(e) {
+    //const width = hero.offsetWidth;
+    //const height = hero.offsetHeight;
+    const { offsetWidth: width, offsetHeight: height } = hero;
+    let { offsetX: x, offsetY: y } = e; // where is the cursor
+
+    //console.log(this, e.target); 
+    // this = hero and e.target = hero but when hovering over the h1 element e.target = h1 
+    // so if those two items are not the same:
+    if (this !== e.target) {
+      x = x + e.target.offsetLeft;
+      y = y + e.target.offsetTop;
+    } // we're adding the pixels from the left or top to h1
+
+    const xWalk = Math.round((x / width * walk) - (walk / 2)); // if walk distance is 100 we can go from 50 to -50
+    const yWalk = Math.round((y / height * walk) - (walk / 2));
+
+    //console.log(xWalk, yWalk);
+
+    text.style.textShadow = `
+      ${xWalk}px ${yWalk}px 2px rgba(255,0,255,0.7),
+      ${xWalk * -1}px ${yWalk}px 4px rgba(0,255,255,0.7),
+      ${yWalk}px ${xWalk * -1}px 6px rgba(0,255,0,0.7),
+      ${yWalk * -1}px ${xWalk}px 8px rgba(0,0,255,0.7)
+      `;
+
+  }
+
+  hero.addEventListener('mousemove', shadow);
 </script>
 </body>
 </html>
