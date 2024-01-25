@@ -23,6 +23,7 @@ Day 14: [JS Refrences VS Copying](https://anka-z.github.io/JavaScript30/14%20-%2
 Day 15: [LocalStorage](https://anka-z.github.io/JavaScript30/15%20-%20LocalStorage/)<br>
 Day 16: [Mouse Move Shadow](https://anka-z.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/)<br>
 Day 17: [Sort Without Articles](https://github.com/anka-z/JavaScript30/tree/master/17%20-%20Sort%20Without%20Articles)<br>
+Day 18: [Adding Up Times with Reduce](https://github.com/anka-z/JavaScript30/tree/master/18%20-%20Adding%20Up%20Times%20with%20Reduce)<br>
 
 #### Portfoloio Template From 
 
