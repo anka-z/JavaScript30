@@ -4,9 +4,16 @@
   <meta charset="UTF-8">
   <title>Videos</title>
   <link rel="icon" href="https://fav.farm/🔥" />
+  <style>
+    body {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-image: url("./pexels-lumn-167699.jpg");
+      background-color: #cccccc;
+      background-size: cover;
+    }
+  </style>
 </head>
 <body>
-  
   <ul class="videos">
     <li data-time="5:43">
       Video 1
@@ -179,11 +186,36 @@
     <li data-time="1:56">
       Video 57
     </li>
-    <li data-time="4:04">
+    <li data-time="4:06">
       Video 58
     </li>
   </ul>
 <script>
+
+  //const timeNodes = [...document.querySelectorAll('[data-time]')];
+  const timeNodes = Array.from(document.querySelectorAll('[data-time]'));
+
+  // Map over the array of timeNodes and extract the 'data-time' attribute from each node
+  // Convert the timeCode (in the format 'mm:ss') to seconds and create an array of seconds
+  const seconds = timeNodes
+    .map(node => node.dataset.time)
+    .map(timeCode => {
+      // Convert  minutes and seconds from the timeCode string to numbers
+      const [mins, secs] = timeCode.split(':').map(parseFloat);
+      // Calculate the total seconds 
+      return (mins * 60) + secs;
+    })
+    // Reduce the array of seconds to a single total value
+    .reduce((total, vidSeconds) => total + vidSeconds);
+
+    let secondsLeft = seconds;
+    const hours = Math.floor(secondsLeft / 3600);
+    secondsLeft = secondsLeft % 3600;
+
+    const mins = Math.floor(secondsLeft / 60);
+    secondsLeft = secondsLeft % 60;
+    console.log(hours, mins, secondsLeft);
+
 </script>
 </body>
 </html>
