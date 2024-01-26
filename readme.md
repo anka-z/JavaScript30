@@ -19,11 +19,12 @@ Day 10: [Hold Shift and Check Checkboxes](https://anka-z.github.io/JavaScript30/
 Day 11: [Custom Video Player](https://anka-z.github.io/JavaScript30/11%20-%20Custom%20Video%20Player/)<br>
 Day 12: [Key Sequence Detection](https://anka-z.github.io/JavaScript30/12%20-%20Key%20Sequence%20Detection/) - type: wesbos<br>
 Day 13: [Slide in on Scroll](https://anka-z.github.io/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/)<br>
-Day 14: [JS Refrences VS Copying](https://anka-z.github.io/JavaScript30/14%20-%20JavaScript%20References%20VS%20Copying/)<br>
+Day 14: [JS References VS Copying](https://anka-z.github.io/JavaScript30/14%20-%20JavaScript%20References%20VS%20Copying/)<br>
 Day 15: [LocalStorage](https://anka-z.github.io/JavaScript30/15%20-%20LocalStorage/)<br>
 Day 16: [Mouse Move Shadow](https://anka-z.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/)<br>
 Day 17: [Sort Without Articles](https://github.com/anka-z/JavaScript30/tree/master/17%20-%20Sort%20Without%20Articles)<br>
 Day 18: [Adding Up Times with Reduce](https://github.com/anka-z/JavaScript30/tree/master/18%20-%20Adding%20Up%20Times%20with%20Reduce)<br>
+Day 19: [Webcam Fun](https://github.com/anka-z/JavaScript30/tree/master/19%20-%20Webcam%20Fun)<br>
 
 #### Portfoloio Template From 
 
