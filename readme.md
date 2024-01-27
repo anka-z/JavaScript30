@@ -25,6 +25,7 @@ Day 16: [Mouse Move Shadow](https://anka-z.github.io/JavaScript30/16%20-%20Mouse
 Day 17: [Sort Without Articles](https://github.com/anka-z/JavaScript30/tree/master/17%20-%20Sort%20Without%20Articles)<br>
 Day 18: [Adding Up Times with Reduce](https://github.com/anka-z/JavaScript30/tree/master/18%20-%20Adding%20Up%20Times%20with%20Reduce)<br>
 Day 19: [Webcam Fun](https://github.com/anka-z/JavaScript30/tree/master/19%20-%20Webcam%20Fun)<br>
+Day 20: [Speech Detection](https://github.com/anka-z/JavaScript30/tree/master/20%20-%20Speech%20Detection)<br>
 
 #### Portfoloio Template From 
 
