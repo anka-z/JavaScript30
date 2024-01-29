@@ -27,6 +27,7 @@ Day 18: [Adding Up Times with Reduce](https://github.com/anka-z/JavaScript30/tre
 Day 19: [Webcam Fun](https://github.com/anka-z/JavaScript30/tree/master/19%20-%20Webcam%20Fun)<br>
 Day 20: [Speech Detection](https://github.com/anka-z/JavaScript30/tree/master/20%20-%20Speech%20Detection)<br>
 Day 21: [Geolocation](https://github.com/anka-z/JavaScript30/tree/master/21%20-%20Geolocation)<br>
+Day 22: [Follow Along Link Highlighter](https://github.com/anka-z/JavaScript30/tree/master/22%20-%20Follow%20Along%20Link%20Highlighter)<br>
 
 
 #### Portfoloio Template From 
