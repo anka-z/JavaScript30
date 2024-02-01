@@ -7,7 +7,6 @@
 </head>
 <body class="bod">
 
-  
   <div class="one">
     <div class="two">
       <div class="three">
@@ -40,11 +39,40 @@
   .three {
     background: coral;
   }
+
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .bod {
+    width: 80%;
+    text-align: center;
+    margin: 50px auto;
+  }
 </style>
 
-<button></button>
+<button>Click</button>
 <script>
+  const divs = document.querySelectorAll('div');
+  const button = document.querySelector('button');
 
+  function logText(e) {
+    console.log(this.classList.value);
+    // e.stopPropagation(); // stop bubbling
+  }
+
+  divs.forEach(div => div.addEventListener('click', logText, {
+    capture: false,
+    once: true
+  }));
+
+  button.addEventListener('click', () => {
+    console.log('Click!!!');
+  }, {
+    once: true
+  });
 </script>
 </body>
 </html>
