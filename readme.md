@@ -30,6 +30,7 @@ Day 21: [Geolocation](https://github.com/anka-z/JavaScript30/tree/master/21%20-%
 Day 22: [Follow Along Link Highlighter](https://github.com/anka-z/JavaScript30/tree/master/22%20-%20Follow%20Along%20Link%20Highlighter)<br>
 Day 23: [Speech Synthesis](https://github.com/anka-z/JavaScript30/tree/master/23%20-%20Speech%20Synthesis)<br>
 Day 24: [Sticky Nav](https://github.com/anka-z/JavaScript30/tree/master/24%20-%20Sticky%20Nav)<br>
+Day 25: [Event Capture, Propagation, Bubbling and Once](https://github.com/anka-z/JavaScript30/tree/master/25%20-%20Event%20Capture%2C%20Propagation%2C%20Bubbling%20and%20Once)<br>
 
 
 #### Portfoloio Template From 
