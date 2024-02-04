@@ -38,4 +38,4 @@ Day 28: [Video Speed Controller](https://github.com/anka-z/JavaScript30/tree/mas
 
 #### Portfoloio Template From 
 
-[Kat Mohd](https://github.com/katmohd/JavaScript30/blob/main/README.md)
+[web3kat](https://github.com/web3kat/JavaScript30/blob/main/README.md)
