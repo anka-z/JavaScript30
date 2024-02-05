@@ -34,6 +34,7 @@ Day 25: [Event Capture, Propagation, Bubbling and Once](https://github.com/anka-
 Day 26: [Stripe Follow Along Nav](https://github.com/anka-z/JavaScript30/tree/master/26%20-%20Stripe%20Follow%20Along%20Nav)<br>
 Day 27: [Click and Drag](https://github.com/anka-z/JavaScript30/tree/master/27%20-%20Click%20and%20Drag)<br>
 Day 28: [Video Speed Controller](https://github.com/anka-z/JavaScript30/tree/master/28%20-%20Video%20Speed%20Controller)<br>
+Day 29: [Countdown Timer](https://github.com/anka-z/JavaScript30/tree/master/29%20-%20Countdown%20Timer)<br>
 
 
 #### Portfoloio Template From 
